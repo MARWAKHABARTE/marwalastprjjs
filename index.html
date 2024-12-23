@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Photo Gallery</h1>
+    </header>
+    <main>
+        <div id="container">
+            <div id="image">Hover over or focus on an image below to display here.</div>
+            <div class="gallery">
+                <figure tabindex="0">
+                    <img src="image1.jpg" alt="A beautiful landscape" class="previewPic" 
+                         onmouseover="upDate(this)" 
+                         onmouseout="unDo()" 
+                         onfocus="upDate(this)" 
+                         onblur="unDo()">
+                </figure>
+                <figure tabindex="0">
+                    <img src="image2.jpg" alt="A serene beach" class="previewPic" 
+                         onmouseover="upDate(this)" 
+                         onmouseout="unDo()" 
+                         onfocus="upDate(this)" 
+                         onblur="unDo()">
+                </figure>
+                <figure tabindex="0">
+                    <img src="image3.jpg" alt="A forest in autumn" class="previewPic" 
+                         onmouseover="upDate(this)" 
+                         onmouseout="unDo()" 
+                         onfocus="upDate(this)" 
+                         onblur="unDo()">
+                </figure>
+                <figure tabindex="0">
+                    <img src="image4.jpg" alt="A city skyline at night" class="previewPic" 
+                         onmouseover="upDate(this)" 
+                         onmouseout="unDo()" 
+                         onfocus="upDate(this)" 
+                         onblur="unDo()">
+                </figure>
+                <figure tabindex="0">
+                    <img src="image5.jpg" alt="A snowy mountain" class="previewPic" 
+                         onmouseover="upDate(this)" 
+                         onmouseout="unDo()" 
+                         onfocus="upDate(this)" 
+                         onblur="unDo()">
+                </figure>
+                <figure tabindex="0">
+                    <img src="image6.jpg" alt="A vibrant sunset" class="previewPic" 
+                         onmouseover="upDate(this)" 
+                         onmouseout="unDo()" 
+                         onfocus="upDate(this)" 
+                         onblur="unDo()">
+                </figure>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
